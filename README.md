@@ -5,4 +5,4 @@ An assignment on java script modifying the DOM and using anonymous callback func
 
 Hosted At: [money.html](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-lukevaughn20/money.html)
 [precision.html](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-lukevaughn20/precision.html)
-[divcont.html](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-lukevaughn20/count.html)
+[countDivs.html](https://44-563-web-apps-s24.github.io/44563-webapps-s24-assignment7-lukevaughn20/countDivs.html)

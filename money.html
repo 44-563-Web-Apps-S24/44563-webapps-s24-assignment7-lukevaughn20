@@ -111,6 +111,8 @@
                 else if(Number(imgClicked) == monsterLocation)
                 {
                     document.getElementById("img" + imgClicked).src="monster.jpg";
+                    score -= 5
+                    gameOver = true
                 }
                 else
                 {

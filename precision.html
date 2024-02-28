@@ -16,18 +16,39 @@
   <div id="target">Your time</div>
   <div id="counter">Count</div>
 
-  <button type="button" class="btn btn-primary">Start Timer</button>
+  <button type="button" class="btn btn-primary" onclick="startTime()">Start Timer</button>
   <button type="button" class="btn btn-primary" onclick="recordTime()">Stop Timer</button>
   
   
   <script> 
 
     var stopTime = undefined;
+
+    function startTime()
+    {
+      for(let i = 0; i < 5; i ++)
+      {
+        setTimeout(()=>{document.getElementById("counter").innerHTML= i}, ((4-i) * 1000))
+      }
+      setTimeout(()=>{
+        if(stopTime == undefined)
+        {
+          document.getElementById("target").innerHTML ="Too Slow";
+        }
+        else{
+          var startTime = Date.now(); 
+          document.getElementById("target").innerHTML = "Time was " + (stopTime - startTime);
+          
+        }
+      }, 4000)
+    }
+
     function recordTime()
     {
       stopTime = Date.now();
       console.log(stopTime)
     }
+
   </script>
 
 </body>
